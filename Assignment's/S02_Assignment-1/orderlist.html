@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    </head>   
+
+    <body>
+         <div id="container"></div>
+
+         <script>
+               var orderlist = React.createElement("ol",null,"order list");
+                var li1 = React.createElement("li",null,"li1");
+                var li2 = React.createElement("li",null,"li2");
+                var li3 = React.createElement("li",null,"li3");
+
+                ReactDOM.render([orderlist,li1,li2,li3],document.getElementById("container"));
+                //ReactDOM.render([li1,li2,li3],document.querySelector("body"));
+         </script>
+        
+    </body>
+</html>

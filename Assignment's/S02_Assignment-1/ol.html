@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="container"></div>
+
+        <script>
+
+            var btn = React.createElement("button",null,"button");
+            var ol = React.createElement("ol",null,"ol");
+
+            var li1 = React.createElement("li1",null,"keshu");
+            var li2 = React.createElement("li2",null,"arun");
+            // var olelement = React.createElement("ol",null,"li1")
+
+            ReactDOM.render([btn,ol,li1,li2],document.getElementById("container"));
+        </script>
+    </body>
+</html>

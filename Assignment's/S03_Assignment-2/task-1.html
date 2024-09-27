@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+            var pElement = React.createElement("p",null,"hello bollo");
+            var h2Element = React.createElement("h2",null,"jaii babu");
+
+            var div1Element = React.createElement("div",null,[h2Element,pElement]);
+
+            var olElement = React.createElement("ol",null,[
+              React.createElement("li",null,"kesava"),
+             React.createElement("li",null,"mani"),
+             React.createElement("li",null,"kumar")]);
+            
+
+            var div2Element = React.createElement("div",null,olElement);
+            ReactDOM.render([div1Element,div2Element],document.getElementById("root"))
+
+
+
+        </script>
+    </body>
+</html>

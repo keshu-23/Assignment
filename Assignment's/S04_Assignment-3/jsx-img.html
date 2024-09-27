@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #para {
+        color: red;
+      }
+      #img{
+        width: 400px;
+        height: 400px;
+        border-radius: 30px;
+        justify-content: center;
+        border-top-style: groove;}
+        #div1{
+            border: 2px solid black;
+            width: fit-content;
+            
+        }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        function createJSX(){
+
+            let div = (<div id="div1">
+        
+
+        <h2> JSX h2 Element </h2>
+
+         <p id = "para">helo babai welcome to qt  </p>
+
+        <img id="img" src="https://st3.depositphotos.com/2931363/14308/i/450/depositphotos_143086365-stock-photo-good-looking-man-with-coffee.jpg"/>
+         
+        </div>)
+        
+        return div
+
+
+          
+        }
+
+
+        ReactDOM.render(createJSX(),document.getElementById("root"))
+    </script>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <link rel="stylesheet" href="./task3.css">
+        
+    </head>
+      <body>
+        <div id="container"></div>
+        
+        <script>
+            var imgElement = React.createElement("img",{src:"https://static.vecteezy.com/system/resources/thumbnails/033/129/417/small/a-business-man-stands-against-white-background-with-his-arms-crossed-ai-generative-photo.jpg",width:"300",height:"400"})
+            var div1Element = React.createElement("div",null,imgElement);
+
+            var  h1Element = React.createElement("h1",null,"KESAVA")
+            var pElement = React.createElement("p",null,
+            "Keshav is a South Asian male given name which is a modern form of name Keshava")
+            var div2Element = React.createElement("div",null,[h1Element,pElement]);
+
+            var btnElement = React.createElement("button",null,"Profile")
+            var div3Element = React.createElement("div",null,btnElement)
+
+            ReactDOM.render([div1Element,div2Element,div3Element],document.getElementById("container"))
+        </script>
+        
+      </body>
+</html>
